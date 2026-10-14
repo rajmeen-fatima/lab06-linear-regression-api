@@ -25,7 +25,7 @@ def predict():
         y = a1*x1 + a2*x2 + a3*x3 + b
 
         return jsonify({
-            "registration number": FA23-BDS-034,
+            "registration number": REGISTRATION_NUMBER,
             "prediction": round(y, 2)
         })
 

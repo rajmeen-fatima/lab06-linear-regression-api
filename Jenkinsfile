@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                sh 'docker compose build'
+                sh 'docker-compose build'
             }
         }
 
@@ -36,8 +36,8 @@ pipeline {
         stage('Deploy API') {
             steps {
                 sh '''
-                    docker compose down
-                    docker compose up -d
+                    docker-compose down
+                    docker-compose up -d
                 '''
             }
         }
