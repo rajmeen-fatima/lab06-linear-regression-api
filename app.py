@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Replace this with your exact student registration number
 REGISTRATION_NUMBER = "FA23-BDS-034"
 print("checking if it works")
-random.seed(REGISTRATION_NUMBER)
+random.seed(34)
 
 a1 = random.uniform(-5, 5)
 a2 = random.uniform(-5, 5)
